@@ -1,15 +1,4 @@
 lst = []
-lst = lst.append('Tomato')
-print(lst)
-
-#lst1 = ('Tomato', 'Potato', 'Cabbage','Onion', 'Carrot')
-#print(len(lst1))
-
-#print(lst1[0])
-#print(lst1[-1])
-#a = len(lst1)
-#b = a/2
-#c = int(blst = []
 lst.append('Tomato')
 print(lst)
 
@@ -91,7 +80,7 @@ back_end = ['Node','Express', 'MongoDB']
 list3 = front_end + back_end
 print(list3)
 
-ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+#ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 
 
 
