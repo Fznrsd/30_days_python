@@ -198,3 +198,55 @@ end
 
 
 
+# def is_prime(num):
+#     if num == 1:
+#         print(num, "is not a prime number")
+#     elif num > 1:
+#         for i in range(2, num):
+#             if (num % i) == 0:
+#                 print(num, "is not a prime number")
+#                 break
+#         else:
+#             print(num, "is a prime number")
+#
+#     else:
+#         print(num, "is not a prime number")
+#
+# is_prime(7)
+
+
+# def unique(food):
+#     for i in food:
+#         if food.count(i) >= 2:
+#             print("The items are not unique in the list.")
+#         else:
+#             print("The items are unique in the list.")
+#
+# food_staff = ['Potato', 'Tomato', 'Mango', 'Milk' , 'Milk']
+# unique(food_staff)
+
+
+# def data_type(food):
+#     for i in food:
+#         if type(i) == str:
+#             x = isinstance(i, str)
+#             print("The items are str data_type in the list.")
+#         if type(i) == int:
+#             print("The items are int data_type in the list.")
+#         if type(i) == float:
+#             print("The items are float data_type in the list.")
+#         if type(i) == bool:
+#             print("The items are bool data_type in the list.")
+# food_staff = ['Potato', 'Tomato', 'Mango', 'Milk' , 'Milk']
+# data_type(food_staff)
+
+
+def check_varaible(argu):
+    return argu.isidentifier()
+
+
+print(check_varaible("8"))
+print(check_varaible('python'))
+print(check_varaible('thirty days of python'))
+
+
