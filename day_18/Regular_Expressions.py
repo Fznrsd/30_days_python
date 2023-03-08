@@ -28,6 +28,6 @@ r = '''%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &a
 r1 = re.sub("@", "", r)
 r2 = re.sub("%", "", r1)
 r3 = re.sub("#", "", r2)
-r4 = re.sub("$", "", r3)
+r4 = re.sub("\$", "", r3)
 r5 = re.sub("&", "", r4)
 print(r5)
