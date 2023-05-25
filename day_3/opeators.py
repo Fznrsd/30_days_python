@@ -72,7 +72,6 @@ else:
     print("The word 'jargon' is not present in the sentence.")
 
 
-
 l = len(a)
 print('float: ', float(l))
 print('string: ',str(l))
@@ -139,3 +138,4 @@ seconds_of_a_year = 365 * 24 * 60 * 60  # Number of seconds in a year
 total_seconds = years * seconds_of_a_year
 
 print("You have lived for", total_seconds, "s")
+
