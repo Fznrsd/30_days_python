@@ -2,10 +2,10 @@ import re
 
 ##########
 
-paragraph = "I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love."
-spliting = paragraph.split()
-result = list((i, spliting.count(i)) for i in spliting)
-print(result)
+# paragraph = "I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love."
+# spliting = paragraph.split()
+# result = list((i, spliting.count(i)) for i in spliting)
+# print(result)
 
 ############
 
@@ -31,3 +31,18 @@ print(result)
 # r4 = re.sub("\$", "", r3)
 # r5 = re.sub("&", "", r4)
 # print(r5)
+
+###########
+
+def is_valid_variable(variable_name):
+    if not re.match('^[a-zA-Z_]', variable_name):
+        return False
+    if not re.match('^[a-zA-Z0-9_]+$', variable_name):
+        return False
+    
+    return True
+
+print(is_valid_variable('first_name')) # True
+print(is_valid_variable('first-name')) # False
+print(is_valid_variable('1first_name')) # False
+print(is_valid_variable('firstname')) # True

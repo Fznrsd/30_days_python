@@ -42,3 +42,11 @@ from datetime import time
 
 #########
 
+import datetime
+
+now = datetime.datetime.now()
+new_year = datetime.datetime(2024, 1, 1)
+time_difference = new_year - now
+print(time_difference)
+
+############

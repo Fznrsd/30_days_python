@@ -1,10 +1,10 @@
 tpl = ()
-tpl1 = ("fiza", "aesha")
-tpl2 = ("jony", "shani")
+tpl1 = ("sister_1", "sister_2")
+tpl2 = ("brother_1", "brother_2")
 tpl_t = tpl1 + tpl2
 print(tpl_t)
 print("total siblings: ", tpl2)
-tpl3 = ("rashid", "zarin")
+tpl3 = ("dad", "mom")
 modify = tpl_t + tpl3
 print(modify)
 

@@ -104,11 +104,15 @@ print("{} % {} = {}".format(a, b ,c))
 c = a**b
 print("{}^{} = {}".format(a, b ,c))
 
+# q = 18
+acronym = []
+name ='Python For Everyone'
+for word in name.split():
+    acronym.append(word[0])
+print("".join(acronym))
 
-
-
-
-
-
+# q no. 34
+print("Name\t\tAge\tCountry\t\tCity")
+print("Asabeneh\t250\tFinland\t\tHelsinki")
 
 

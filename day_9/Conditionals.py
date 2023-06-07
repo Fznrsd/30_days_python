@@ -61,6 +61,9 @@ else:
     fruits.append(frt)
     print("a fruit doesn't exist in the list, we add the fruit to the list", fruits)
 
+# LEVEL_3
+# q no. 1
+
 person = {
     'first_name': 'Asabeneh',
     'last_name': 'Yetayeh',
@@ -100,4 +103,3 @@ else:
 
 if person['is_marred'] == True and person['country'] == 'Finland':
     print(person['first_name'], person['last_name'], "lives in", person['country'], "He is married.")
-

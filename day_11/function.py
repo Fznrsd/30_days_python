@@ -1,3 +1,8 @@
+import cmath
+import math
+
+
+
 # def add_num(a, b):
 #     print(a + b)
 # a = eval(input(print("enter 1st number: ")))
@@ -54,10 +59,14 @@
 #     print(y)
 # calculate_slope(5, 5, 6)
 
-# def qurd(x):      # ax² + bx + c = 0
-#     print("a", x*x, "+ b", x, "+ c")
-#
-# qurd(5)
+# def solve_quadratic(a, b, c):
+#     # Solution = (-b ± √ (b)**2 - 4*a*c) / (2*a)
+#     # ± can be handled by solving twice
+#     solution1 = (-b + cmath.sqrt((b**2) - (4*a*c))) / (2*a)
+#     solution2 = (-b - cmath.sqrt((b**2) - (4*a*c))) / (2*a)
+#     return solution1.real, solution2.real
+# solution = solve_quadratic(1, 5, 6)
+# print('Solution 1: \t{0:.2f}\nSolution 2: \t{1:.2f}'.format(solution[0],solution[1]))
 
 # def print_list(lst):
 #     for x in lst:
@@ -155,6 +164,41 @@
 #
 # is_empty()
 #
+
+
+# level 2
+# q no. 3
+
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+# def calculate_range(lst):
+#     return max(lst) - min(lst)
+# 
+# # Calculate range
+# age_range = calculate_range(ages)
+# print("Range:", age_range)
+
+
+# def calculate_standard_deviation(lst):
+#     mean = sum(lst) / len(lst)
+#     variance = sum((x - mean) ** 2 for x in lst) / len(lst)
+#     standard_deviation = math.sqrt(variance)
+#     return standard_deviation
+# 
+# # Calculate standard deviation
+# std_deviation = calculate_standard_deviation(ages)
+# print("Standard Deviation:", std_deviation)
+
+
+# def calculate_variance(lst):
+#     mean = sum(lst) / len(lst)
+#     variance = sum((x - mean) ** 2 for x in lst) / len(lst)
+#     return variance
+# 
+# # Calculate variance
+# variance = calculate_variance(ages)
+# print("Variance:", variance)
+
 
 """
 Question 3.3 answer

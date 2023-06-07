@@ -80,10 +80,74 @@ back_end = ['Node','Express', 'MongoDB']
 list3 = front_end + back_end
 print(list3)
 
-#ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+full_stack = list3[:]
+full_stack[full_stack.index('Redux')+1:full_stack.index('Redux')+1] = ['Python', 'SQL']
 
+print(full_stack)
 
+# level 2
+# q no. 1
 
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 
+ages.sort()
+min_age = ages[0]
+max_age = ages[-1]
 
+ages.append(min_age)
+ages.append(max_age)
 
+if len(ages) % 2 == 1:
+    median_age = ages[len(ages) // 2]
+else:
+    median_age = (ages[len(ages) // 2] + ages[len(ages) // 2 - 1]) / 2
+
+average_age = sum(ages) / len(ages)
+
+range_of_ages = max_age - min_age
+
+min_to_average = abs(min_age - average_age)
+max_to_average = abs(max_age - average_age)
+
+print("Min age:", min_age)
+print("Max age:", max_age)
+print("Median age:", median_age)
+print("Average age:", average_age)
+print("Range of ages:", range_of_ages)
+print("Min to average:", min_to_average)
+print("Max to average:", max_to_average)
+
+# q no. 2
+from countries import countries
+
+if len(countries) % 2 == 0:
+    middle_countries = [middle_country, countries[len(countries) // 2 - 1]]
+    print("The middle countries are:", middle_countries)
+
+else:
+    middle_country = countries[len(countries) // 2]
+    print("The middle country is:", middle_country)
+
+# q no. 2
+middle_index = len(countries) // 2
+
+if len(countries) % 2 == 0:
+    first_half = countries[:middle_index]
+    second_half = countries[middle_index:]
+
+else:
+    first_half = countries[:middle_index + 1]
+    second_half = countries[middle_index + 1:]
+
+print("The first half of the list is:", first_half)
+print("The second half of the list is:", second_half)
+
+# q no. 3
+
+countr = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+
+# Unpack the first three countries
+first_three_countries, scandic_countr = countr[:3], countr[3:]
+
+print("The first three countries are:", first_three_countries)
+print("The scandic countries are:", scandic_countr)
